@@ -1,0 +1,24 @@
+{
+  "name": "dynamic-load-balancing",
+  "version": "1.0.0",
+  "description": "Dynamic load balancing using NodeJS, HAProxy and Docker.",
+  "main": "app.js",
+  "dependencies": {
+    "dockerode": "^2.3.1",
+    "express": "^4.14.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OliCallaghan/Dynamic-Load-Balancing.git"
+  },
+  "author": "Oli Callaghan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OliCallaghan/Dynamic-Load-Balancing/issues"
+  },
+  "homepage": "https://github.com/OliCallaghan/Dynamic-Load-Balancing#readme"
+}

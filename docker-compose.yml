@@ -1,0 +1,19 @@
+haproxy:
+  image: haproxy
+  volumes:
+    - ./HAProxy/haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg
+  expose:
+    - 8080
+  ports:
+    - "8080:8080"
+
+dynamic:
+  build: .
+  dockerfile: Dockerfile
+  volumes:
+    - .:/usr/app
+    - /var/run/docker.sock:/var/run/docker.sock
+  expose:
+    - 3000
+  ports:
+    - "3000:3000"
